@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Khula&family=Lobster&family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange: #F49F6F;
+    --green: #9DD9D2;
+    --dark: #392F5A;
+    --light: #FFF8F0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* align container */
+.container__center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li{list-style: none;}
+
+a{text-decoration: none;}
+
+h1{
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+p{
+    color: var(--dark);
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    margin: 10px 0 20px 0;
+}
+
+.btn{
+    padding: 10px 20px;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+.orange__btn{
+    background-color: var(--orange);
+}
+
+.orange__btn a{
+    color: white;
+    font-size: 16px;
+}
+
+
+/* NAVIGATION */
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: var(--green);
+}
+
+.nav__container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+#logo{
+    font-family: 'Candal', sans-serif;
+    color: var(--light);
+}
+
+ul li {
+    padding: 0 10px;
+    margin: 0 10px;
+}
+
+ul li a{
+    color: black;
+    font-size: 18px;
+}
+
+#login__btn{
+    background-color: transparent;
+    /* Add border inside the element.*/
+    box-shadow: 0px 0px 0px 2px black inset;
+}
+
+#login__btn a{
+    color: black;
+    font-size: 16px;
+}
+
+/* HERO SECTION */
+#hero{
+    height: 50vh;
+    width: 100%;
+    background: url(imgs/food_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#hero h1{
+    font-family: 'Lobster', cursive;
+    color: var(--light);
+}
+
+#hero p{
+    max-width: 500px;
+    text-align: center;
+    color: var(--light);
+}
+
+/* INFORMATION */
+#information{
+    max-width: 1300px;
+    margin: 1rem auto;
+}
+
+#info__img1{
+    background: url(imgs/info1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#info__img2{
+    background: url(imgs/info2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#info__img3{
+    background: url(imgs/info3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info{
+    height: 30vh;
+    width: 100%;
+    margin:1rem;
+    padding: 1rem;
+}
+
+.info__text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info__img{
+    width: 50%;
+    height: 100%;
+}
+
+/* PRICE  */
+.prices__container{
+    width: 100%;
+    max-width: 1300px;
+}
+
+.price__card{
+    background-color: var(--light);
+    margin: 1rem;
+    width: 30%;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.3),
+    -3px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.price__card h3{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.price__card:first-of-type h3{
+    background-color: #D09C10;
+}
+.price__card:nth-of-type(2) h3{
+    background-color: #CB6500;
+}
+.price__card:nth-of-type(3) h3{
+    background-color: #41A89C;
+}
+
+.price__card .price{
+    width: 100%;
+    height: 50px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.price__card:first-of-type .price{
+    background-color: #F4D06F;
+}
+.price__card:nth-of-type(2) .price{
+    background-color: #FF8811;
+}
+.price__card:nth-of-type(3) .price{
+    background-color: #9DD9D2;
+}
+
+.price__card ul{
+    margin: 10px 0;
+}
+
+.price__card .far{
+    color: #9A530C;
+}
+
+.price__btn{
+    background-color: #9A530C;
+    margin-bottom: 1rem;
+}
+
+.price__btn a{
+    color: var(--light);
+}
+
+/* BOTTOM SECTION */
+#bottom__sec{
+    height: 35vh;
+    width: 100%;
+    background: url(imgs/small__bg.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    margin-top: 2rem;
+}
+
+#bottom__sec p{
+    color: white;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: var(--green);
+}
+
+.footer__container{
+    width: 80vw;
+    max-width: 800px;
+    margin: 2rem;
+}
+
+.footer__col{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__col h5{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.footer__col a{
+    color: var(--dark);
+}
